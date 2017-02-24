@@ -1,0 +1,64 @@
+h4{
+    color:aqua
+}
+
+h5{
+    color:darkviolet
+}
+h6{
+    
+    color:crimson
+}
+h7{
+    font-size: 50px;
+    
+    color: green
+}
+h1{
+    color: red;
+        font-size:50px;
+    
+}
+
+div{
+    color: beige;
+    
+}
+
+.container{
+    background-color: black;
+    font-size: 22px;
+    color: antiquewhite;
+    
+}
+
+#toilet{
+   // color:red;
+    
+}
+
+#kitchen {
+    color:aqua;
+    
+}
+
+.bg{
+    
+   background-color:bisque;
+    color:green
+    
+}
+.italy{
+    font-style: italic;
+    font-family: monospace;
+    
+}
+
+.table{
+    color: darkred;
+}
+
+#text a:hover {
+    text-shadow: 0 2px 0 #d84f4f, 0 4px 0 #d54646, 0 6px 0 #ce3333, 0 8px 0 #b92e2e, 0 10px 0 #912525, 0 12px 0 #721e1e, 0px 12px 10px rgba(0,0,0,0.5);
+    top: -12px;
+}
