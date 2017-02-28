@@ -111,7 +111,7 @@ function reverseString(val){
 }
 
 
-
+// post and increment and pre increment 
 var sampleNum=2;
 
 console.log("testing pre/post increment");

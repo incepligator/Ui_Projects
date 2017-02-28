@@ -40,3 +40,7 @@ else{
     console.log("not Matched");
 }
 
+val val1="1";
+val val2="2";
+val val3="3";
+

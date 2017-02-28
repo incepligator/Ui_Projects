@@ -1,0 +1,17 @@
+html form fist name
+last name
+address
+ph no 
+email . 
+
+gender. 
+default at least 3 
+check box for classes for consultancy,
+
+store in  array
+
+and push to 
+
+disply userr add 
+
+puseh and dipay in html table updated. 
