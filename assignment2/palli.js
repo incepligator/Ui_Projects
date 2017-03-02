@@ -7,6 +7,9 @@ function reverse(){
     
     var a=document.getElementById("palin").value;
     var b= a.split('');
+    
+    console.log(a);
+    
     b=b.reverse().join('');
     
     if(a==b){
@@ -36,4 +39,6 @@ function sortt(){
 function myFunction() {
     x.sort(function(a, b){return a-b});
     document.getElementById("dadd").innerHTML = x;
+    
+    
 }

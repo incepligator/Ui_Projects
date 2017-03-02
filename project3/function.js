@@ -98,8 +98,9 @@ var num2;
 
 
 function importData(){
-    var num1=document.getElementById("num1").value;
-   var num2=document.getElementById("num2").value;
+    num1=document.getElementById("num1").value;
+    num2=document.getElementById("num2").value;
+    
     calc.setNum1(num1);
     calc.setNum2(num2);
     
