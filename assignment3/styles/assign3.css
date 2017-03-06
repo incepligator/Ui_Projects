@@ -12,3 +12,14 @@
 
 
 
+
+.cc-wave .cc-wave .cc-wave-svg {
+    background-image: url('/projects1/image/bwlue.jpg');
+    height: 14px;
+    width: 999px;
+    background-position: 150px 0;
+    background-repeat: repeat-x;
+    -webkit-animation: animatedBackground 6s linear infinite;
+    animation: animatedBackground 6s linear infinite;
+    position: relative;
+}

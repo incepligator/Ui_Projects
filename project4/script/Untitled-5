@@ -1,0 +1,92 @@
+
+"use strict";
+var personArray = [];
+
+var obj1=new Person();
+obj1.setFirstName("George");
+obj1.setLastName("Harrison");
+obj1.setAddress("123 test");
+
+var obj2=new Person();
+obj2.setFirstName("John");
+obj2.setLastName("Lennon");
+obj2.setAddress("347asdf test");
+
+var obj3=new Person();
+obj3.setFirstName("Jim");
+obj3.setLastName("Bean");
+obj3.setAddress("asdasdf asdf a");
+
+personArray.push(obj1);
+personArray.push(obj2);
+personArray.push(obj3);
+
+console.log(personArray.length);
+
+$(document).ready(function(){
+    render();
+    $("#submit").on("click",grabValues);
+    //$("#submit").on("click",grabValues);
+});
+
+function render(){
+    var resultBody = `
+    <div class="row">
+        <div class="col-md-2"><strong>First Name</strong></div>
+        <div class="col-md-2"><strong>Last Name</strong></div>
+        <div class="col-md-2"><strong>Address </strong></div>
+    </div>`;
+    for(var i=0;i<personArray.length;i++){
+        resultBody += `
+        <div class='row'>
+            <div class='col-md-2'>`+
+                personArray[i].getFirstName()+`                
+            </div>
+            <div class='col-md-2'>`+
+                personArray[i].getLastName()+`                
+            </div>
+            <div class='col-md-2'>`+
+                personArray[i].getAddress()+`                
+            </div>
+        </div>
+        `;
+    }
+//    personArray.forEach(function(obj){
+//        resultBody += `
+//        <div class='row'>
+//            <div class='col-md-2'>`+
+//                obj.getFirstName()+`                
+//            </div>
+//            <div class='col-md-2'>`+
+//                obj.getLastName()+`                
+//            </div>
+//            <div class='col-md-2'>`+
+//                obj.getAddress()+`                
+//            </div>
+//        </div>
+//        `;   
+//    });
+    
+    $("#results").html(resultBody);
+};
+
+function grabValues(){
+   // event.preventDefault();
+    var firstName = $("#fName").val();//document.getElementById
+    var lastName = $("#lName").val();
+    var address = $("#address").val();
+    var obj = new Person();
+    obj.setFirstName(firstName);
+    obj.setLastName(lastName);
+    obj.setAddress(address);
+    personArray.push(obj);
+    render();
+}
+
+
+
+
+
+
+
+
