@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html>
+<head>
+    <body ng-app="app">
+            <h1>Assignment 5</h1>
+         <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+        
+            <div ng-controller="appCtrl">
+                
+              <form>
+                <div > Name
+                  <input type="text" ng-model="formModel.name">
+                  </div>
+                <div > Adress
+                  <input type="text" ng-model="formModel.address" ></div>
+                <div > Company
+                  <input type="text" ng-model="formModel.company"></div>
+                <div > Salary
+                  <input type="text" ng-model="formModel.salary"></div>
+                
+                </form>  
+                <button ng-click="display()">Submit</button>
+               
+                <div>
+                <table class="table table-hover">
+                    <div>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Company</th>
+                        <th>Salary</th>
+                        
+                    </tr>
+                        </div>
+                    
+                    <div >
+                     <tr>
+                        <td>{{formModel.name}} </td>
+                        <td>{{formModel.address}}</td>
+                       <td>{{formModel.company}}</td>
+                        <td>{{formModel.salary}}</td>
+                        
+                    </tr>
+                    
+                     </div>
+                
+                </table>
+                    </div>
+            </div>
+        
+        
+      <script type="text/javascript" src="/node_modules/angular/angular.js"></script>
+        <script type="text/javascript" src="/assignment5/scripts/app.js"></script>
+        <script type="text/javascript" src="/assignment5/scripts/controller/appCtrl.js"></script>
+    
+    </body>
+    </head>
+</html>
+
